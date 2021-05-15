@@ -1,7 +1,7 @@
 #pragma once
 
 int NWD(int lhs, int rhs) {
-    int remainder;
+    int remainder{};
     while (rhs != 0) {
         remainder = lhs % rhs;
         lhs = rhs;
