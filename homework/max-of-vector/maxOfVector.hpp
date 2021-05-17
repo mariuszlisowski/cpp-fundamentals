@@ -4,7 +4,7 @@
 #include <vector>
 
 int maxOfVector(const std::vector<int>& vec) {
-    auto greatest{ std::max_element(vec.begin(), vec.end()) };
+    const auto it = std::max_element(vec.begin(), vec.end());
 
-    return greatest != vec.end() ? *greatest : 0;
+    return it != vec.end() ? *it : 0;
 }
