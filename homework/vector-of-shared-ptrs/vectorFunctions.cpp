@@ -9,7 +9,7 @@ shared_pointers generate(int count) {
     }
     shared_pointers pointers; 
     pointers.reserve(count);
-    for (int i{}; i < count; ++i) {
+    for (int i = 0; i < count; ++i) {
         pointers.emplace_back(std::make_shared<int>(i));
     }
 
