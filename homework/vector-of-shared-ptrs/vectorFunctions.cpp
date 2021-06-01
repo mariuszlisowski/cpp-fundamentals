@@ -4,7 +4,7 @@
 
 shared_pointers generate(int count) {  
     if (count < 1) { 
-        std::cout << "The count must be greater than 0." << std::endl;  
+        std::cerr << "The count must be greater than 0." << std::endl;  
         return {};
     }
     shared_pointers pointers; 
